@@ -1,0 +1,81 @@
+---
+import Footer from '@/components/Footer.astro'
+import Header from '@/components/Header.astro'
+import Layout from '@/layouts/Layout.astro'
+
+const { frontmatter } = Astro.props
+const title = frontmatter?.title ?? ''
+const description = frontmatter?.description ?? ''
+---
+
+<Layout>
+  <Header />
+  <article class="content-pack-body mx-auto max-w-3xl px-4 py-20 sm:px-6 lg:px-8">
+    <header class="mb-12 space-y-4">
+      <p class="text-sm font-semibold uppercase tracking-wide text-primary">Featured resource</p>
+      <h1 class="text-4xl font-bold tracking-tight text-foreground">{title}</h1>
+      {description && <p class="text-lg leading-8 text-muted-foreground">{description}</p>}
+    </header>
+    <slot />
+  </article>
+  <Footer />
+</Layout>
+
+<style>
+  :global(.content-pack-body) {
+    color: var(--foreground);
+  }
+
+  :global(.content-pack-body h2) {
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.25;
+    color: var(--foreground);
+  }
+
+  :global(.content-pack-body h3) {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--foreground);
+  }
+
+  :global(.content-pack-body p),
+  :global(.content-pack-body li) {
+    color: var(--muted-foreground);
+    line-height: 1.75;
+  }
+
+  :global(.content-pack-body ul),
+  :global(.content-pack-body ol) {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+  }
+
+  :global(.content-pack-body ul) {
+    list-style: disc;
+  }
+
+  :global(.content-pack-body ol) {
+    list-style: decimal;
+  }
+
+  :global(.content-pack-body a) {
+    color: var(--primary);
+    text-underline-offset: 4px;
+  }
+
+  :global(.content-pack-body a:hover) {
+    text-decoration: underline;
+  }
+
+  :global(.content-pack-body blockquote) {
+    margin: 1.5rem 0;
+    border-left: 4px solid var(--border);
+    padding-left: 1rem;
+    color: var(--muted-foreground);
+  }
+</style>
