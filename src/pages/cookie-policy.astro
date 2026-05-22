@@ -1,0 +1,53 @@
+---
+import Footer from '@/components/Footer.astro'
+import Header from '@/components/Header.astro'
+import Layout from '@/layouts/Layout.astro'
+
+const pageTitle = 'Cookies and Similar Technologies'
+const pageDescription = 'Simple cookie guidance for a brandless publishing site built from template defaults and niche assumptions.'
+---
+
+<Layout>
+  <Header />
+  <article class="mx-auto max-w-3xl px-4 py-20 sm:px-6 lg:px-8">
+    <header class="mb-12 space-y-4">
+      <p class="text-sm font-semibold uppercase tracking-wide text-primary">Pages</p>
+      <h1 class="text-4xl font-bold tracking-tight">{pageTitle}</h1>
+      <p class="text-lg text-muted-foreground">{pageDescription}</p>
+    </header>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl font-semibold tracking-tight">Why cookies exist on a website</h2>
+        <p class="text-muted-foreground leading-7">Cookies are small pieces of data that can help a site remember settings, measure basic usage, and keep pages working as expected.</p>
+        <p class="text-muted-foreground leading-7">This page stands on its own, but it should still be read together with the privacy policy when a fuller legal set is published.</p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl font-semibold tracking-tight">Cookie categories</h2>
+        <p class="text-muted-foreground leading-7">Essential cookies are used to keep the site functioning and to support basic navigation, security, and session behaviour.</p>
+        <p class="text-muted-foreground leading-7">Preference cookies, if used, can help remember basic display choices or language settings.</p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl font-semibold tracking-tight">Why the site may use these tools</h2>
+        <p class="text-muted-foreground leading-7">Essential cookies can keep the site functioning, while other cookies may support preferences, analytics, or embedded media.</p>
+        <p class="text-muted-foreground leading-7">If the site later adds a newsletter, comments, account areas, or tracking, the cookie policy should be updated before those features are public.</p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl font-semibold tracking-tight">Third-party technologies</h2>
+        <p class="text-muted-foreground leading-7">Third-party technologies can include analytics platforms, embedded video players, map services, newsletter tools, or comment providers.</p>
+        <p class="text-muted-foreground leading-7">The cookie policy should identify real services only when the site actually uses them.</p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl font-semibold tracking-tight">How visitors can manage cookies</h2>
+        <p class="text-muted-foreground leading-7">Visitors can usually manage cookies through browser settings and, where available, any site-level preference tools.</p>
+        <p class="text-muted-foreground leading-7">If consent tools are introduced later, they should be explained clearly and should match the actual cookie behaviour of the site.</p>
+      </section>
+      <aside class="rounded-lg border border-border bg-muted p-4 text-sm text-muted-foreground">
+        <p>This starter page is generated as a baseline and should be reviewed and customized before being relied on as production legal or business copy.</p>
+      </aside>
+  </article>
+  <Footer />
+</Layout>

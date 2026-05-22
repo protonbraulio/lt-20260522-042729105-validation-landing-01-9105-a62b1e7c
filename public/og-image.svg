@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Validation Landing Load Test 01 20260522-042729105">
+  <rect width="1200" height="630" fill="#f8fafc"/>
+  <rect x="72" y="72" width="1056" height="486" rx="36" fill="#ffffff" stroke="#dbe4f0" stroke-width="3"/>
+  <text x="132" y="278" fill="#0f172a" font-family="Arial, sans-serif" font-size="76" font-weight="700">Validation Landing Load Test 01 20260522-042729105</text>
+  <text x="132" y="366" fill="#475569" font-family="Arial, sans-serif" font-size="32">Real staging load test batch 20260522-042729105 for Validation Landing.</text>
+  <text x="132" y="486" fill="#2563eb" font-family="Arial, sans-serif" font-size="24">Validation Landing for Astro</text>
+</svg>

@@ -1,0 +1,42 @@
+---
+import Footer from '@/components/Footer.astro'
+import Header from '@/components/Header.astro'
+import Layout from '@/layouts/Layout.astro'
+
+const pageTitle = 'About This Site'
+const pageDescription = 'A concise introduction to Validation Landing Load Test 01 20260522-042729105 and the editorial work it publishes.'
+---
+
+<Layout>
+  <Header />
+  <article class="mx-auto max-w-3xl px-4 py-20 sm:px-6 lg:px-8">
+    <header class="mb-12 space-y-4">
+      <p class="text-sm font-semibold uppercase tracking-wide text-primary">Pages</p>
+      <h1 class="text-4xl font-bold tracking-tight">{pageTitle}</h1>
+      <p class="text-lg text-muted-foreground">{pageDescription}</p>
+    </header>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl font-semibold tracking-tight">What this publication covers</h2>
+        <p class="text-muted-foreground leading-7">Validation Landing Load Test 01 20260522-042729105 exists to publish marketing pages, updates, reference material, explanatory copy, and supporting public information.</p>
+        <p class="text-muted-foreground leading-7">It is aimed at visitors using or reviewing the website.</p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl font-semibold tracking-tight">Editorial standards and selection</h2>
+        <p class="text-muted-foreground leading-7">We prefer clear, practical language and content that helps readers understand the site, its topic, and the surrounding context.</p>
+        <p class="text-muted-foreground leading-7">New pages, revisions, and updates are chosen to keep the site useful even when the brand, team, or business details are still evolving.</p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl font-semibold tracking-tight">Publishing scope and ongoing updates</h2>
+        <p class="text-muted-foreground leading-7">Validation Landing Load Test 01 20260522-042729105 is expected to publish marketing pages, updates, reference material, explanatory copy, and supporting public information.</p>
+        <p class="text-muted-foreground leading-7">The site can cover present information clearly and support public-facing communication about the project or business.</p>
+        <p class="text-muted-foreground leading-7">That usually includes marketing pages, explanatory articles, and public information that helps visitors orient themselves quickly.</p>
+      </section>
+      <aside class="rounded-lg border border-border bg-muted p-4 text-sm text-muted-foreground">
+        <p>This starter page is generated as a baseline and should be reviewed and customized before being relied on as production legal or business copy.</p>
+      </aside>
+  </article>
+  <Footer />
+</Layout>

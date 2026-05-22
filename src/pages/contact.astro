@@ -1,0 +1,47 @@
+---
+import Footer from '@/components/Footer.astro'
+import Header from '@/components/Header.astro'
+import Layout from '@/layouts/Layout.astro'
+
+const pageTitle = 'Contact'
+const pageDescription = 'Use the contact details below for general enquiries, editorial notes, and site-related questions.'
+---
+
+<Layout>
+  <Header />
+  <article class="mx-auto max-w-3xl px-4 py-20 sm:px-6 lg:px-8">
+    <header class="mb-12 space-y-4">
+      <p class="text-sm font-semibold uppercase tracking-wide text-primary">Pages</p>
+      <h1 class="text-4xl font-bold tracking-tight">{pageTitle}</h1>
+      <p class="text-lg text-muted-foreground">{pageDescription}</p>
+    </header>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl font-semibold tracking-tight">Available contact routes</h2>
+        <p class="text-muted-foreground leading-7">Use [CONTACT_EMAIL] for general enquiries, editorial notes, and messages that do not need a public reply.</p>
+        <p class="text-muted-foreground leading-7">If a newsletter is added later, it should be kept separate from general contact requests.</p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl font-semibold tracking-tight">What you can send here</h2>
+        <p class="text-muted-foreground leading-7">Use the published email route for general enquiries, corrections, or messages that do not need a formal support queue.</p>
+        <p class="text-muted-foreground leading-7">The contact page is best suited to questions about general enquiries, business questions, and communication connected to the website.</p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl font-semibold tracking-tight">Response expectations</h2>
+        <p class="text-muted-foreground leading-7">Responses, when they are provided, will depend on the type of enquiry and the availability of the editorial team.</p>
+        <p class="text-muted-foreground leading-7">No guaranteed response window is implied unless the site later publishes one as part of a real support or business workflow.</p>
+      </section>
+
+      <section class="space-y-4">
+        <h2 class="text-2xl font-semibold tracking-tight">Privacy note</h2>
+        <p class="text-muted-foreground leading-7">Contact messages should be treated as operational communication rather than as public content.</p>
+        <p class="text-muted-foreground leading-7">If more formal handling is required later, the site can add a specific retention or routing policy without changing the basic page structure.</p>
+      </section>
+      <aside class="rounded-lg border border-border bg-muted p-4 text-sm text-muted-foreground">
+        <p>This starter page is generated as a baseline and should be reviewed and customized before being relied on as production legal or business copy.</p>
+      </aside>
+  </article>
+  <Footer />
+</Layout>
